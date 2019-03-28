@@ -2878,6 +2878,12 @@ The interior label was a bit tricky to do, and it has some logic put in that i d
 
 
       function UseragentSearchContainer (props) {
+        const {
+          useragentsResource
+        } = props
+
+        if (useragentsResource == null || useragentsResource.length === 0) return null
+
         return (
           <div id='useragent-search'>
             <UseragentSearchBar />
@@ -2887,6 +2893,7 @@ The interior label was a bit tricky to do, and it has some logic put in that i d
         )
       }
       export default connect(
+        'selectUseragentsResource',
         UseragentSearchContainer
       )
     #+END_SRC

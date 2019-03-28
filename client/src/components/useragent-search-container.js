@@ -6,6 +6,12 @@ import UseragentsActiveFilter from './useragents-active-filter'
 
 
 function UseragentSearchContainer (props) {
+  const {
+    useragentsResource
+  } = props
+
+  if (useragentsResource == null || useragentsResource.length === 0) return null
+
   return (
     <div id='useragent-search'>
       <UseragentSearchBar />
@@ -15,5 +21,6 @@ function UseragentSearchContainer (props) {
   )
 }
 export default connect(
+  'selectUseragentsResource',
   UseragentSearchContainer
 )
