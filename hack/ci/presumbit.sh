@@ -16,11 +16,10 @@ curl -L https://github.com/tmate-io/tmate/releases/download/2.2.1/tmate-2.2.1-st
 ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
 apt-get update -y
 apt-get install -y locales locales-all
+export APISNOOP_DEST=$ARTIFACTS
 ./apisnoop.sh --install
 ./apisnoop.sh --update-cache
 ./apisnoop.sh --process-cache
-# runme!
-sleep 9999999
+# sleep 9999999
 find $HOME
-ls -la /logs/artifacts
 find /logs/artifacts
