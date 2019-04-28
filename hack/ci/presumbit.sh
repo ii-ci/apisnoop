@@ -19,6 +19,7 @@ apt-get install -y locales locales-all
 ./apisnoop.sh --install
 ./apisnoop.sh --update-cache
 ./apisnoop.sh --process-cache
+# runme!
 sleep 9999999
 find $HOME
 ls -la /logs/artifacts
