@@ -13,6 +13,7 @@ TMATE
 date
 curl -L https://github.com/tmate-io/tmate/releases/download/2.2.1/tmate-2.2.1-static-linux-amd64.tar.gz \
   | tar xvz -f - -C /usr/local/bin --strip-components 1
+ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
 apt-get update -y
 apt-get install -y locales locales-all
 sleep 9999999
