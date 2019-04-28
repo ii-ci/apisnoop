@@ -2,6 +2,6 @@
 set -e
 set -x
 mkdir -p $ARTIFACTS
-env | tee $ORTIFACTS/env
+env | tee $ARTIFACTS/env
 ls -la /logs/artifacts
 find /logs/artifacts
