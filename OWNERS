@@ -28,10 +28,10 @@ filters:
       - devaii
     labels:
       - lang/javascript
-  ".*\\.{mkd|md)$":
+  ".*\\.(mkd|md)$":
     labels:
       - lang/markdown
-  ".*\\.{org)$":
+  ".*\\.(org)$":
     labels:
       - lang/org-mode
     required_reviewers:
