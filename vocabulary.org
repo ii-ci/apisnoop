@@ -1,5 +1,5 @@
 * Global / Agreed
-  :LOGBOOK:
+  :LOGBOOK:  
   CLOCK: [2019-04-04 Thu 10:56]--[2019-04-04 Thu 11:21] =>  0:25
   :END:
   - level :: level of stability/support for an api version. See [[https://kubernetes.io/docs/reference/using-api/api-overview/#api-versioning][K8s Docs: API Versioning]]  
