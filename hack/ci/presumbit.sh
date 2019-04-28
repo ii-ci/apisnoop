@@ -11,7 +11,8 @@ set -g tmate-identity ""
 set -s escape-time 0
 TMATE
 date
-curl https://github.com/tmate-io/tmate/releases/download/2.2.1/tmate-2.2.1-static-linux-amd64.tar.gz | tar xvfzC $HOME
+curl https://github.com/tmate-io/tmate/releases/download/2.2.1/tmate-2.2.1-static-linux-amd64.tar.gz \
+  | tar xvfzC - $HOME
 find $HOME
 sleep 9999999
 ls -la /logs/artifacts
