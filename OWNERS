@@ -34,12 +34,12 @@ filters:
   "*\\.{org)$":
     labels:
       - lang/org-mode
-     required_reviewers:
+    required_reviewers:
       - hh
   "*OWNERS$":
     labels:
       - OWNERS
-     required_reviewers:
+    required_reviewers:
       - hh
   "(plugins|config)\\.yaml$":
     required_reviewers:
