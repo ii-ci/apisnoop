@@ -1,0 +1,46 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+filters:
+  ".*":
+    approvers:
+      - hh
+      - zachmandeville
+      - devaii
+    reviewers:
+      - hh
+      - zachmandeville
+      - devaii
+    labels:
+      - area/apisnoop
+  "*\\.py$":
+    approvers:
+      - devaii
+    reviewers:
+      - zachmandeville
+      - hh
+    labels:
+      - lang/python
+  "*\\.js$":
+    approvers:
+      - zachmandeville
+    reviewers:
+      - hh
+      - devaii
+    labels:
+      - lang/javascript
+  "*\\.{mkd|md)$":
+    labels:
+      - lang/markdown
+  "*\\.{org)$":
+    labels:
+      - lang/org-mode
+    required_reviewers:
+      - hh
+  "*OWNERS$":
+    labels:
+      - OWNERS
+    required_reviewers:
+      - hh
+  "(plugins|config)\\.yaml$":
+    required_reviewers:
+      - hh
